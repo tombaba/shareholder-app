@@ -265,7 +265,7 @@ async function init() {
 async function signInWithGoogle() {
   const { error } = await sb.auth.signInWithOAuth({
     provider: 'google',
-    options: { redirectTo: window.location.href }
+    options: { redirectTo: "https://tombaba.github.io/shareholder-app/" }
   });
   if (error) {
     const el = document.getElementById('login-error');
